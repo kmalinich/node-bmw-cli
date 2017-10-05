@@ -12,6 +12,7 @@ log    = require('log-output');
 socket = require('socket');
 update = require('update');
 
+terminal = require('terminal-kit').terminal;
 
 // Configure term event listeners
 function term_config(pass) {
@@ -36,13 +37,15 @@ function term_config(pass) {
 
 // Global init
 function init() {
-	log.msg({ msg : 'Initializing' });
+	terminal.slowTyping('Initializing node-bmw CLI\n\n', { flashStyle : term.brightWhite }, () => {
+		// log.msg({ msg : 'Initializing' });
 
-	json.read(() => { // Read JSON config and status files
-		socket.init(() => { // Start zeroMQ client
-			log.msg({ msg : 'Initialized' });
+		json.read(() => { // Read JSON config and status files
+			socket.init(() => { // Start zeroMQ client
+				log.msg({ msg : 'Initialized' });
+			}, term);
 		}, term);
-	}, term);
+	});
 }
 
 // Global term
