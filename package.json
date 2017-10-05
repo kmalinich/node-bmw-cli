@@ -1,0 +1,36 @@
+{
+	"author": "kdm <kennygprs@gmail.com>",
+	"bugs": {
+		"url": "https://github.com/kmalinich/node-bmw-cli/issues"
+	},
+	"dependencies": {
+		"callers-path": "^1.0.5",
+		"defaults-deep": "^0.2.3",
+		"json-colorizer": "^1.1.0",
+		"jsonfile": "^4.0.0",
+		"multipad": "^1.1.1",
+		"object-path": "^0.11.4",
+		"pad": "^1.1.0",
+		"path": "^0.12.7",
+		"socket.io-client": "^2.0.3",
+		"trucolor": "^0.6.6"
+	},
+	"description": "node-bmw-client CLI",
+	"devDependencies": {},
+	"homepage": "https://github.com/kmalinich/node-bmw-cli#readme",
+	"keywords": [
+		"bmw",
+		"canbus",
+		"dbus",
+		"ibus",
+		"kbus"
+	],
+	"license": "MIT",
+	"main": "launch.sh",
+	"name": "node-bmw-client",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kmalinich/node-bmw-cli.git"
+	},
+	"version": "0.0.1"
+}
