@@ -37,7 +37,7 @@ function term_config(pass) {
 
 // Global init
 function init() {
-	terminal.slowTyping('Initializing node-bmw CLI\n\n', { flashStyle : term.brightWhite }, () => {
+	terminal.slowTyping('Initializing node-bmw CLI\n\n', { delay : 25, flashDelay : 500, flashStyle : term.brightWhite }, () => {
 		// log.msg({ msg : 'Initializing' });
 
 		json.read(() => { // Read JSON config and status files
