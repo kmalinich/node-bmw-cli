@@ -10,10 +10,10 @@
 		"jsonfile": "^4.0.0",
 		"multipad": "^1.1.1",
 		"object-path": "^0.11.4",
-		"pad": "^1.1.0",
+		"pad": "^2.0.1",
 		"path": "^0.12.7",
 		"socket.io-client": "^2.0.3",
-		"terminal-kit": "^1.13.12",
+		"terminal-kit": "^1.13.13",
 		"trucolor": "^0.6.6"
 	},
 	"description": "node-bmw-client CLI",

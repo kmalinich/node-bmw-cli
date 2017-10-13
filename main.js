@@ -41,7 +41,7 @@ function init() {
 		// log.msg({ msg : 'Initializing' });
 
 		json.read(() => { // Read JSON config and status files
-			socket.init(() => { // Start zeroMQ client
+			socket.init(() => { // Start socket.io client
 				log.msg({ msg : 'Initialized' });
 			}, term);
 		}, term);
