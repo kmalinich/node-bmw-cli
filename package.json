@@ -7,14 +7,14 @@
 		"callers-path": "^1.0.5",
 		"defaults-deep": "^0.2.4",
 		"json-colorizer": "^1.1.1",
-		"jsonfile": "^4.0.0",
+		"jsonfile": "^5.0.0",
 		"multipad": "^1.1.1",
 		"object-path": "^0.11.4",
-		"pad": "^2.1.0",
+		"pad": "^2.2.1",
 		"path": "^0.12.7",
 		"socket.io-client": "^2.1.1",
-		"terminal-kit": "^1.17.7",
-		"trucolor": "^0.6.6"
+		"terminal-kit": "^1.26.2",
+		"trucolor": "^0.7.1"
 	},
 	"description": "node-bmw-client CLI",
 	"devDependencies": {},
