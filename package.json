@@ -6,15 +6,15 @@
 	"dependencies": {
 		"callers-path": "^1.0.5",
 		"defaults-deep": "^0.2.4",
-		"json-colorizer": "^1.1.1",
+		"json-colorizer": "^2.1.2",
 		"jsonfile": "^5.0.0",
 		"multipad": "^1.1.1",
 		"object-path": "^0.11.4",
 		"pad": "^2.2.1",
 		"path": "^0.12.7",
-		"socket.io-client": "^2.1.1",
-		"terminal-kit": "^1.26.2",
-		"trucolor": "^0.7.1"
+		"socket.io-client": "^2.2.0",
+		"terminal-kit": "^1.26.8",
+		"trucolor": "^0.7.2"
 	},
 	"description": "node-bmw-client CLI",
 	"devDependencies": {},
@@ -34,7 +34,7 @@
 		"url": "git+https://github.com/kmalinich/node-bmw-cli.git"
 	},
 	"scripts": {
-		"postinstall": "/usr/bin/env bash ./cp-index.sh"
+		"postinstall": "/usr/bin/env bash ./postinstall"
 	},
 	"version": "0.0.1"
 }
