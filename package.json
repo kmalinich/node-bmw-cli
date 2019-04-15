@@ -14,7 +14,8 @@
 		"path": "^0.12.7",
 		"socket.io-client": "^2.2.0",
 		"terminal-kit": "^1.28.0",
-		"trucolor": "^1.0.2"
+		"trucolor": "^1.0.2",
+		"zeromq": "^5.1.0"
 	},
 	"description": "node-bmw-client CLI",
 	"devDependencies": {},

@@ -1,4 +1,6 @@
-/* eslint no-global-assign: "off", no-console: "off" */
+/* eslint no-console       : 0 */
+/* eslint no-global-assign : 0 */
+
 
 app_path = __dirname;
 app_name = 'bmwcli';
@@ -6,30 +8,32 @@ app_intf = 'cli';
 
 process.title = app_name;
 
+
 // node-bmw libraries
 json   = require('json');
 log    = require('log-output');
-socket = require('socket');
 update = require('update');
+socket = require('socket');
 
 terminal = require('terminal-kit').terminal;
+
 
 // Configure term event listeners
 function term_config(pass) {
 	process.on('SIGTERM', () => {
 		console.log('');
-		log.msg({ msg : 'Caught SIGTERM' });
+		log.msg('Caught SIGTERM');
 		process.nextTick(term);
 	});
 
 	process.on('SIGINT', () => {
 		console.log('');
-		log.msg({ msg : 'Caught SIGINT' });
+		log.msg('Caught SIGINT');
 		process.nextTick(term);
 	});
 
 	process.on('exit', () => {
-		log.msg({ msg : 'Terminated' });
+		log.msg('Terminated');
 	});
 
 	process.nextTick(pass);
@@ -38,11 +42,11 @@ function term_config(pass) {
 // Global init
 function init() {
 	terminal.slowTyping('Initializing node-bmw CLI\n\n', { delay : 25, flashDelay : 500, flashStyle : term.brightWhite }, () => {
-		// log.msg({ msg : 'Initializing' });
+		// log.msg('Initializing');
 
 		json.read(() => { // Read JSON config and status files
 			socket.init(() => { // Start socket.io client
-				log.msg({ msg : 'Initialized' });
+				log.msg('Initialized');
 			}, term);
 		}, term);
 	});
@@ -50,7 +54,7 @@ function init() {
 
 // Global term
 function term() {
-	log.msg({ msg : 'Terminating' });
+	log.msg('Terminating');
 
 	socket.term(() => { // Stop socket.io client
 		json.write(() => { // Write JSON config and status files
@@ -60,6 +64,4 @@ function term() {
 }
 
 // FASTEN SEATBELTS
-term_config(() => {
-	init();
-});
+term_config(init);
