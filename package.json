@@ -6,16 +6,15 @@
 	"dependencies": {
 		"callers-path": "^1.0.5",
 		"defaults-deep": "^0.2.4",
-		"json-colorizer": "^2.1.2",
+		"json-colorizer": "^2.2.1",
 		"jsonfile": "^5.0.0",
 		"multipad": "^1.1.1",
 		"object-path": "^0.11.4",
-		"pad": "^2.3.0",
+		"pad": "^3.1.0",
 		"path": "^0.12.7",
 		"socket.io-client": "^2.2.0",
 		"terminal-kit": "^1.28.0",
-		"trucolor": "^1.0.2",
-		"zeromq": "^5.1.0"
+		"trucolor": "^1.0.2"
 	},
 	"description": "node-bmw-client CLI",
 	"devDependencies": {},
