@@ -13,7 +13,7 @@
 		"pad": "^3.2.0",
 		"path": "^0.12.7",
 		"socket.io-client": "^2.3.0",
-		"terminal-kit": "^1.31.3",
+		"terminal-kit": "^1.31.4",
 		"trucolor": "^1.0.6"
 	},
 	"description": "node-bmw-client CLI",
