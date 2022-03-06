@@ -10,10 +10,10 @@ process.title = app_name;
 
 
 // node-bmw libraries
-json   = require('json');
-log    = require('log-output');
-update = require('update');
-socket = require('socket');
+json   = require('./lib/json.js');
+log    = require('./share/log-output.js');
+update = require('./share/update.js');
+socket = require('./lib/socket.js');
 
 terminal = require('terminal-kit').terminal;
 

@@ -1,40 +1,56 @@
 {
 	"author": "kdm <kennygprs@gmail.com>",
+	"bin": {
+		"bmwcd": "bin/bmwcd"
+	},
 	"bugs": {
 		"url": "https://github.com/kmalinich/node-bmw-cli/issues"
 	},
 	"dependencies": {
 		"callers-path": "^1.0.5",
 		"defaults-deep": "^0.2.4",
-		"json-colorizer": "^2.2.1",
-		"jsonfile": "^5.0.0",
+		"json-colorizer": "^2.2.2",
+		"jsonfile": "^6.1.0",
 		"multipad": "^1.1.1",
-		"object-path": "^0.11.4",
+		"object-path": "^0.11.8",
 		"pad": "^3.2.0",
 		"path": "^0.12.7",
-		"socket.io-client": "^2.3.0",
-		"terminal-kit": "^1.31.4",
-		"trucolor": "^1.0.6"
+		"socket.io-client": "^4.4.1",
+		"terminal-kit": "^2.4.0",
+		"trucolor": "1.0.6"
 	},
 	"description": "node-bmw-client CLI",
-	"devDependencies": {},
+	"devDependencies": {
+		"eslint": "^8.5.0",
+		"eslint-plugin-node": "^11.1.0"
+	},
+	"directories": {
+		"lib": "./lib",
+		"share": "./share"
+	},
+	"engines": {
+		"node": ">=17"
+	},
 	"homepage": "https://github.com/kmalinich/node-bmw-cli#readme",
 	"keywords": [
 		"bmw",
 		"canbus",
 		"dbus",
+		"dcan",
 		"ibus",
-		"kbus"
+		"kbus",
+		"kcan"
 	],
 	"license": "MIT",
-	"main": "launch.sh",
-	"name": "node-bmw-client",
+	"main": "./index.js",
+	"name": "node-bmw-cli",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/kmalinich/node-bmw-cli.git"
 	},
 	"scripts": {
-		"postinstall": "/usr/bin/env bash ./postinstall"
+		"lint": "eslint ."
 	},
+	"type": "commonjs",
 	"version": "0.0.1"
 }
